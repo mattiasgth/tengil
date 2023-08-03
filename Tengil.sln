@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tengil.API", "Tengil.API\Tengil.API.csproj", "{3800E713-AE8B-44D1-B2EC-B7AAC0E4C777}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tengil.Model", "Tengil.Model\Tengil.Model.csproj", "{08091894-B3EB-4319-893F-D7A6952AF57B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tengil.Service", "Tengil.Service\Tengil.Service.csproj", "{C57CD09B-FFA5-4BEC-82B2-E2E57266D1FA}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontend", "FrontEnd\frontend.esproj", "{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3800E713-AE8B-44D1-B2EC-B7AAC0E4C777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3800E713-AE8B-44D1-B2EC-B7AAC0E4C777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3800E713-AE8B-44D1-B2EC-B7AAC0E4C777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3800E713-AE8B-44D1-B2EC-B7AAC0E4C777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08091894-B3EB-4319-893F-D7A6952AF57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08091894-B3EB-4319-893F-D7A6952AF57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08091894-B3EB-4319-893F-D7A6952AF57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08091894-B3EB-4319-893F-D7A6952AF57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57CD09B-FFA5-4BEC-82B2-E2E57266D1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57CD09B-FFA5-4BEC-82B2-E2E57266D1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57CD09B-FFA5-4BEC-82B2-E2E57266D1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57CD09B-FFA5-4BEC-82B2-E2E57266D1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D154BE31-B414-4D76-8D54-4231C29EFE12}
+	EndGlobalSection
+EndGlobal

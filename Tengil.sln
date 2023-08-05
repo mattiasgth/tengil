@@ -11,6 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tengil.Service", "Tengil.Se
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontend", "FrontEnd\frontend.esproj", "{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySql.EntityFrameworkCore", "mysql-connector-net\EFCore7\src\MySql.EntityFrameworkCore.csproj", "{5D9CC4D4-93C7-4956-BB26-FE696141A7E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Folder", "Solution Folder", "{64E52E72-E1FC-4151-8CA0-421C35E29E2B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +42,10 @@ Global
 		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E91A939-AB8B-4C36-B85E-4187ED9A58A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5D9CC4D4-93C7-4956-BB26-FE696141A7E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9CC4D4-93C7-4956-BB26-FE696141A7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9CC4D4-93C7-4956-BB26-FE696141A7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9CC4D4-93C7-4956-BB26-FE696141A7E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

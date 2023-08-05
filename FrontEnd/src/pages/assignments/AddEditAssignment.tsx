@@ -1,11 +1,9 @@
-import { Label } from "@mui/icons-material";
-import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControl, FormControlLabel, Grid, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControl, FormControlLabel, Grid, InputLabel, MenuItem, Paper, Select, styled, TextField } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers";
 import { useEffect, useState } from "react";
-import { TngCustomerListing } from "../model/customer-listing";
-import { TngStatusValue } from "../model/status-value";
-import { TngUser } from "../model/user";
-
+import { TngCustomerListing } from "../../model/customer-listing";
+import { TngStatusValue } from "../../model/status-value";
+import { TngUser } from "../../model/user";
 
 const API_ENDPOINT = 'https://localhost:7120';
 
@@ -76,7 +74,7 @@ export default function AddEditAssignment(props: { open: boolean, handleClose: (
                 labelId="customer-select-label"
               >
                 {customers.map(item => {
-                  return (<MenuItem value={item.id}>{item.name}</MenuItem>);
+                  return (<MenuItem value={item.id} key={item.id}>{item.name}</MenuItem>);
                 }
                 )}
               </Select>
@@ -105,7 +103,7 @@ export default function AddEditAssignment(props: { open: boolean, handleClose: (
                 labelId="owner-select-label"
               >
                 {owners.map(item => {
-                  return (<MenuItem value={item.id}>{item.username}</MenuItem>);
+                  return (<MenuItem value={item.id} key={item.id}>{item.username}</MenuItem>);
                 }
                 )}
               </Select>
@@ -123,7 +121,7 @@ export default function AddEditAssignment(props: { open: boolean, handleClose: (
                 labelId="status-select-label"
               >
                 {statusValues.map(item => {
-                  return (<MenuItem value={item.id}>{item.text}</MenuItem>);
+                  return (<MenuItem value={item.id} key={item.id}>{item.text}</MenuItem>);
                 }
                 )}
               </Select>
@@ -139,21 +137,23 @@ export default function AddEditAssignment(props: { open: boolean, handleClose: (
           <Grid item xs={6}>
             <DatePicker
               label="Date"
+              slotProps={{ textField: { fullWidth: true } }}
             />
           </Grid>
           <Grid item xs={6}>
             <DatePicker
               label="Deadline"
+              slotProps={{ textField: { fullWidth: true } }}
             />
           </Grid>
-          <Grid item>
+          <Grid item xs={6}>
             <TextField
               id="folder"
               label="Folder"
               fullWidth
             />
           </Grid>
-          <Grid item>
+          <Grid item xs={6}>
             <TextField
               id="po-text"
               label="Purchase Order"

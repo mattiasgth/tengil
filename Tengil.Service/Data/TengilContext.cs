@@ -581,6 +581,8 @@ public partial class TengilContext : DbContext
                 .HasColumnName("Invoice_Name");
             entity.Property(e => e.Location).HasMaxLength(255);
             entity.Property(e => e.NameText).HasMaxLength(255);
+
+            entity.HasMany(e => e.Rows).WithOne().HasForeignKey(x => x.InvoiceId);
         });
 
         modelBuilder.Entity<TngPoOut>(entity =>

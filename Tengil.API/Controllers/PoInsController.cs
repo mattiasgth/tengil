@@ -39,12 +39,43 @@ namespace Tengil.API.Controllers
             }        
         }
 
+        [HttpGet("{id:int}/rows")]
+        public async Task<IActionResult> GetPoInRowsById(int id)
+        {
+            try
+            {
+                var poIn = await _service.GetPoInById(id);
+                if(poIn == null)
+                {
+                    return NotFound();
+                }
+                var rslt = _mapper.Map<IEnumerable<PurchaseOrderRowResponseDTO>>(poIn.Rows);
+                return Ok(rslt);
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+        }
+
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetPoInById(int id)
         {
-            var poIn = await _service.GetPoInById(id);
-            var rslt = _mapper.Map<PoInResponseDTO>(poIn);
-            return Ok(rslt);
+            try
+            {
+                var poIn = await _service.GetPoInById(id);
+                if (poIn == null)
+                {
+                    return NotFound();
+                }
+                var rslt = _mapper.Map<PoInResponseDTO>(poIn);
+                return Ok(rslt);
+
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }        
         }
 
         [HttpPut("{id:int}")]

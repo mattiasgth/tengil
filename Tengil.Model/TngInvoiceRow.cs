@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace tngcmd.Data;
 
+/// <summary>
+/// This is problematic -- the rows are actually bound to a purchase order.
+/// </summary>
 public partial class TngInvoiceRow
 {
     public int Id { get; set; }
@@ -23,5 +26,5 @@ public partial class TngInvoiceRow
 
     public int? TemplateId { get; set; }
 
-    public int? InvoiceId { get; set; }
+    public int? InvoiceId { get; set; } // TODO: Seriously confusing, InvoiceId is foreign key to a tngPOIn :-)
 }

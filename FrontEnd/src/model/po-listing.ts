@@ -5,4 +5,5 @@ export interface TngPoInListing {
   nameText: string;
   dateIn: Date | Dayjs | null;
   amount: number;
+  customerId: number | null;
 }

@@ -11,6 +11,7 @@ namespace Tengil.API
         {
             CreateMap<TngPoIn, PoInListingResponseDTO>();
             CreateMap<TngPoIn, PoInResponseDTO>();
+            CreateMap<TngInvoiceRow, PurchaseOrderRowResponseDTO>();
             CreateMap<TngAssignment, AssignmentListingResponseDTO>();
             CreateMap<TngAssignment, AssignmentResponseDTO>();
             CreateMap<TngInvoice, InvoiceListingResponseDTO>();

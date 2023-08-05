@@ -2,7 +2,7 @@ import { Button, Container, FormControl, Grid, InputLabel, MenuItem, Select, Sta
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
-import { TngAssignmentListing } from "../model/assignment-listing";
+import { TngAssignmentListing } from "../../model/assignment-listing";
 import AddEditAssignment from "./AddEditAssignment";
 
 const API_ENDPOINT = 'https://localhost:7120';

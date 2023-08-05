@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Collections.Immutable;
 using Tengil.DTO;
 using Tengil.Service.DTO;
 using tngcmd.Data;
@@ -115,6 +116,13 @@ namespace Tengil.Service
         public async Task<IEnumerable<TngStatusValue>> GetStatusValues()
         {
             var rslt = await _context.TngStatusValues
+                .ToListAsync();
+            return rslt;
+        }
+
+        public async Task<IEnumerable<TngUnit>> GetUnits()
+        {
+            var rslt = await _context.TngUnits
                 .ToListAsync();
             return rslt;
         }

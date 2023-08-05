@@ -18,31 +18,23 @@ const TopMenu: React.FC = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component={Link} to="/" sx={{ flexGrow: 1 }}>
-            <Button color="inherit">
+          <Typography variant="h6" sx={{ flexGrow: 1 }}>
+            <Button color="inherit" component={Link} to="/">
               Tengil
             </Button>
           </Typography>
-        <Link to="/assignments">
-            <Button color="inherit">
-              Assignments
-            </Button>
-        </Link>
-          <Link to="/purchase-orders">
-            <Button color="inherit">
-              Purchase Orders
-            </Button>
-          </Link>
-          <Link to="/invoices">
-            <Button color="inherit">
-              Invoices
-            </Button>
-          </Link>
-          <Link to="/customers">
-            <Button color="inherit">
-              Customers
-            </Button>
-          </Link>
+          <Button component={Link} to="/assignments" color="inherit">
+            Assignments
+          </Button>
+          <Button component={Link} to="/purchase-orders" color="inherit">
+            Purchase Orders
+          </Button>
+          <Button component={Link} to="/invoices" color="inherit">
+            Invoices
+          </Button>
+          <Button component={Link} to="/customers" color="inherit">
+            Customers
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>

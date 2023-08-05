@@ -33,4 +33,5 @@ public partial class TngPoIn
 
     public int? AddedById { get; set; }
     public virtual TngUser? AddedBy { get; set; }
+    public virtual IEnumerable<TngInvoiceRow> Rows { get; set; } = new List<TngInvoiceRow>();
 }
